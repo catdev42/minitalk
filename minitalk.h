@@ -6,7 +6,7 @@
 /*   By: myakoven <myakoven@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/28 18:20:11 by myakoven          #+#    #+#             */
-/*   Updated: 2024/03/28 18:41:26 by myakoven         ###   ########.fr       */
+/*   Updated: 2024/04/26 22:42:47 by myakoven         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include "./libft/libft.h"
 # include <fcntl.h>
 # include <signal.h>
+// # include <bits/sigaction.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
