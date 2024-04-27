@@ -6,7 +6,7 @@
 /*   By: myakoven <myakoven@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 19:22:22 by myakoven          #+#    #+#             */
-/*   Updated: 2024/02/15 00:23:39 by myakoven         ###   ########.fr       */
+/*   Updated: 2024/04/26 15:53:03 by myakoven         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,10 @@ void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 
 void				ft_freetab(char **arr, int len);
+
+/* MATH*/
+int					ft_recursive_power(int num, int pow);
+
 /* SINGLE LINKED LIST */
 
 typedef struct s_list
