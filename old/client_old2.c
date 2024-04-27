@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   client_old2.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myakoven <myakoven@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 16:18:17 by myakoven          #+#    #+#             */
-/*   Updated: 2024/04/26 17:23:12 by myakoven         ###   ########.fr       */
+/*   Updated: 2024/04/27 15:57:08 by myakoven         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,13 +78,12 @@ int	main(int argc, char **argv)
 
 int	bit_to_int(char *bitarray)
 {
-	// int	len;
 	int	i;
 	int	j;
 	int	intofbit;
 	int	num;
 
-
+	// int	len;
 	num = 0;
 	// len = ft_strlen(bitarray);
 	i = 0;
@@ -95,7 +94,7 @@ int	bit_to_int(char *bitarray)
 		{
 			intofbit = bitarray[8 * i + j] - 48;
 			if (intofbit == 1)
-				num = num + (ft_recursive_power(2, 7-j));
+				num = num + (ft_recursive_power(2, 7 - j));
 			j--;
 		}
 		i++;
@@ -121,7 +120,8 @@ char	*make_bit_array(char *string)
 		j = 7;
 		while (j >= 0)
 		{
-			intofbit = string[i] string[i] >> j & 1;
+			intofbit = string[i];
+			string[i] >> j & 1;
 			printf("%i", intofbit);
 			bitarray[8 * i + j] = intofbit;
 			j--;
